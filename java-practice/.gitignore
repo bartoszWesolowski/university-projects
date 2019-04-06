@@ -1,0 +1,10 @@
+*.idea
+*.project
+*.class
+*.classpath
+*.iml
+*.settings
+*.ser
+*/target/*
+/rectruitment-exercises/src/main/java/hidden
+/squares-game/stats.json
