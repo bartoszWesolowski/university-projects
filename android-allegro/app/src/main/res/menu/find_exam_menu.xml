@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/save_search_preferences"
+        android:title="@string/save_search_pref_menu_text" />
+    <item android:id="@+id/set_search_preferences"
+        android:title="Set my search preferences" />
+    <item android:id="@+id/clear_search_preferences"
+        android:title="@string/clear_search_preferences" />
+
+</menu>

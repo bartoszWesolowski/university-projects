@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button android:id="@+id/findExamsButton"
+        android:onClick="findExamsButtonClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/find_exams_button_text"
+        android:background="@color/findExamButtonColor"
+        android:layout_weight="1"/>
+
+    <Button android:id="@+id/addExamButton"
+        android:onClick="addExamButtonClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/add_exams_button_text"
+        android:background="@color/addExamButtonColor"
+        android:layout_weight="1"/>
+
+    <Button android:id="@+id/savedExamsButton"
+        android:onClick="savedExamsButtonClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/saved_exams_button_text"
+        android:background="@color/savedExamsButtonColor"
+        android:layout_weight="1"/>
+
+</LinearLayout>

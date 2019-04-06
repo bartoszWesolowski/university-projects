@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/animator"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.FindExamActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:onClick="findExamsButtonClick"
+            android:text="@string/find_exams_button"/>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/find_exams_scroll_view"
+                android:layout_gravity="center_horizontal|top"
+                android:fillViewport="true" >
+                    <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete_university_short_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/university_short_name_search_hint"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete_university_full_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/university_full_name_search_hint"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete_field_of_study"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/field_of_study_search_hint"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete_subject"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/subject_search_hint"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete_teacher_last_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/teacher_last_name_search_hint"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete_teacher_first_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/teacher_first_name_search_hint"/>
+
+                    <EditText
+                        android:id="@+id/find_exam_year_edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/year_search_hint"
+                        android:inputType="number" />
+
+                </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+</ViewAnimator>

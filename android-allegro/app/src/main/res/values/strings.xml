@@ -1,0 +1,33 @@
+<resources>
+    <string name="find_exams_button_text">Find exam</string>
+    <string name="add_exams_button_text">Add exam</string>
+    <string name="saved_exams_button_text">Saved exams</string>
+    <string name="app_name">Exams Archive</string>
+    <string name="action_settings">Settings</string>
+    <string name="subject_search_hint">Subject</string>
+    <string name="teacher_last_name_search_hint">Teacher last name</string>
+    <string name="field_of_study_search_hint">Field of studies</string>
+    <string name="find_exams_button">Find exams</string>
+    <string name="exam_details_save_exam_button_text">Save Exam</string>
+    <string name="exam_details_university_label_text">University:</string>
+    <string name="exam_details_field_of_studies_label_text">Field Of Studies:</string>
+    <string name="exam_details_subject_label_text">Subject:</string>
+    <string name="exam_details_teacher_label_text">Teacher:</string>
+    <string name="exam_details_year_label_text">Year:</string>
+    <string name="exam_details_questions_label_text">Questions:</string>
+    <string name="exam_details_exam_saved">Exam saved</string>
+    <string name="found_results_toast_msg_template">FOUND: %d results</string>
+    <string name="find_exams_connection_timout_error">Can not connect to the server. Please check your internet connection and try again</string>
+    <string name="cant_find_exams_with_given_params_toast_msg">Cant find any exams with given parameters</string>
+    <string name="university_short_name_search_hint">University short name</string>
+    <string name="university_full_name_search_hint">University full name (optional)</string>
+    <string name="teacher_first_name_search_hint">Teacher name (optional)</string>
+    <string name="year_search_hint">Year (optional)</string>
+    <string name="delete_exam_button_text">Delete exam</string>
+    <string name="no_exams_to_show_msg">No exams to show here...</string>
+    <string name="save_search_pref_menu_text">Save search preferences</string>
+    <string name="clear_search_preferences">Clear search preferences</string>
+    <string name="saved_search_pref_toas">Search preferences saved</string>
+    <string name="no_internet_connection_error_msg">There is no network connection available. Please enable data transfer or connect to a WiFi network</string>
+    <string name="cant_save_exam_toas_msg">Cannot save this exam. Haven\'t you already saved this exam?</string>
+</resources>
