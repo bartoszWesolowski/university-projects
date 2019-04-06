@@ -1,0 +1,67 @@
+<div class="container">
+  <h1>Compare sets using minkowski comparison method</h1>
+  <div>
+    <p>This form allows you to compare two fuzzy sets represented by arrays of numbers. Each array should containt numbers between 0 and 1.</p>
+    <p>For more information visit: 
+      <a target="_blank" href="http://bartek887.pythonanywhere.com/visualization/minkowski.html">http://bartek887.pythonanywhere.com/visualization/minkowski.html</a>
+    </p>
+  </div>
+  <div [hidden]="!comparisonResult?.result" class="alert alert-success">
+    <h3>The degree of similarity of passed sets is: 
+      <span>{{comparisonResult?.result | number}}</span>
+    </h3>
+  </div>
+  <form  #minkowskiForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="setA">Set A</label>
+      <input type="text" class="form-control" id="setA" required
+        [(ngModel)]="setA.setAsString" name="setA"
+        #setAValue="ngModel">
+        
+      <div [hidden]="setAValue.valid"
+        class="alert alert-danger">
+        Set A is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="setB">Set B</label>
+      <input type="text" class="form-control" id="setB" required
+        [(ngModel)]="setB.setAsString" name="setB"
+        #setBValue="ngModel">
+        
+        <div [hidden]="setBValue.valid"
+        class="alert alert-danger">
+        Set B is required
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="r">R</label>
+      <input type="number" class="form-control" id="r" required
+      [(ngModel)]="config.r" name="r"
+      #r="ngModel">
+      <div [hidden]="r.valid"
+        class="alert alert-danger">
+        R config is required
+      </div>
+    </div>
+
+
+    <button type="submit" class="btn btn-success"
+      data-toggle="tooltip" data-placement="top" title="Calculate similarity of sets"
+    [disabled]="!minkowskiForm.form.valid">Calculate</button>
+
+  <div class="chart" *ngIf="chart?.labels?.length > 0">
+    <!-- ng if as work around for chart issue https://github.com/valor-software/ng2-charts/issues/692 -->
+    <canvas baseChart 
+    [datasets]="chart.dataset"
+    [labels]="chart.labels"
+    [colors]="chart.lineChartColors"
+    [chartType]="chart.type"
+    [options]="chart.options"></canvas>
+  </div>
+
+  </form>
+</div>
