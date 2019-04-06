@@ -1,0 +1,41 @@
+Avg prediction diff: 3.402708572
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.38228696938
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.41065566763
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.41572257326
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.39316749201
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.35988151422
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.36428671785
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.37705290254
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.39558928262
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.37276751106
+>>> execfile('exec.py')
+executing query SELECT * from films
+predicator
+Avg prediction diff: 3.39442398153
